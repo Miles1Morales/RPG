@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+</head>
+<body>
+  <h1>Game</h1>
+  
+  <form id="ajouterPersonnageForm">
+    <label for="nomPersonnage">Nom du personnage:</label>
+    <input type="text" id="nomPersonnage" name="nomPersonnage" required>
+    <select id="classePersonnage" name="classePersonnage" required>
+      <option value="Assassin">Assassin</option>
+      <option value="Berzerker">Berzerker</option>  
+      <option value="Fighter">Fighter</option>  
+      <option value="IceWizard">IceWizard</option>
+      <option value="Monk">Monk</option>
+      <option value="Paladin">Paladin</option>
+      <option value="Wizard">Wizard</option>
+      <!-- Ajoutez d'autres options pour d'autres classes si nécessaire -->
+    </select>
+    <button type="button" onclick="ajouterPersonnage()">Ajouter Personnage</button>
+  </form>
+
+  <button type="button" onclick="lancerPartie()">Lancer la Partie</button>
+
+  <script src="personnage.js"></script>
+  <script src="fighter.js"></script>
+  <script src="berzerker.js"></script>
+  <script src="monk.js"></script>
+  <script src="assassin.js"></script>
+  <script src="paladin.js"></script>
+  <script src="wizard.js"></script>
+  <script src="iceWizard.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
